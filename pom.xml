@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.peng</groupId>
-	<artifactId>meng</artifactId>
+	<artifactId>Me</artifactId>
 	<packaging>war</packaging>
 	<version>1.0</version>
 	<name>meng Maven Webapp</name>
@@ -343,7 +343,7 @@
 				<version>2.4</version>
 				<configuration>
 					<failOnMissingWebXml>false</failOnMissingWebXml>
-					<warName>meng</warName>
+					<warName>Me</warName>
 				</configuration>
 			</plugin>
 		</plugins>

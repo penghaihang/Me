@@ -68,6 +68,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         .tokenValiditySeconds(1209600);
 
     http.csrf().disable();
+    http.authorizeRequests().antMatchers("/public/**").permitAll();
   }
 
   protected AuthenticationSuccessHandler getLoginSuccessHandler() {
