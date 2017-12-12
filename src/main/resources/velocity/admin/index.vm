@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Me |欢迎进入奇幻世界</title>
+</head>
+<body>
+欢迎$!{user}的到来<a href="${request.contextPath}/logout"/>退出</a> 
+
+</body>
+</html>

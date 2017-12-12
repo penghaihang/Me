@@ -5,83 +5,88 @@ import java.util.Collection;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-public class MyUserDetails implements UserDetails{
+public class MyUserDetails implements UserDetails {
 
-	private Integer userId;
-	
-	private String username;
-	
-	private String password;
-	
-	private boolean enabled;
-	
-	private Collection<? extends GrantedAuthority> authorities;
-	
-	
-	public Integer getUserId() {
-		return userId;
-	}
+  /**
+   * 
+   */
+  private static final long serialVersionUID = -7830818469753538843L;
 
-	public void setUserId(Integer userId) {
-		this.userId = userId;
-	}
+  private Integer userId;
 
-	public void setUsername(String username) {
-		this.username = username;
-	}
+  private String username;
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+  private String password;
 
-	public void setEnabled(boolean enabled) {
-		this.enabled = enabled;
-	}
+  private boolean enabled;
 
-	public void setAuthorities(Collection<? extends GrantedAuthority> authorities) {
-		this.authorities = authorities;
-	}
+  private Collection<? extends GrantedAuthority> authorities;
 
-	@Override
-	public Collection<? extends GrantedAuthority> getAuthorities() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
-	@Override
-	public String getPassword() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+  public Integer getUserId() {
+    return userId;
+  }
 
-	@Override
-	public String getUsername() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+  public void setUserId(Integer userId) {
+    this.userId = userId;
+  }
 
-	@Override
-	public boolean isAccountNonExpired() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+  public void setUsername(String username) {
+    this.username = username;
+  }
 
-	@Override
-	public boolean isAccountNonLocked() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+  public void setPassword(String password) {
+    this.password = password;
+  }
 
-	@Override
-	public boolean isCredentialsNonExpired() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+  public void setEnabled(boolean enabled) {
+    this.enabled = enabled;
+  }
 
-	@Override
-	public boolean isEnabled() {
-		// TODO Auto-generated method stub
-		return false;
-	}
+  public void setAuthorities(Collection<? extends GrantedAuthority> authorities) {
+    this.authorities = authorities;
+  }
+
+  @Override
+  public Collection<? extends GrantedAuthority> getAuthorities() {
+    // TODO Auto-generated method stub
+    return authorities;
+  }
+
+  @Override
+  public String getPassword() {
+    // TODO Auto-generated method stub
+    return password;
+  }
+
+  @Override
+  public String getUsername() {
+    // TODO Auto-generated method stub
+    return username;
+  }
+
+  @Override
+  public boolean isAccountNonExpired() {
+    // TODO Auto-generated method stub
+    return false;
+  }
+
+  @Override
+  public boolean isAccountNonLocked() {
+    // TODO Auto-generated method stub
+    return false;
+  }
+
+  @Override
+  public boolean isCredentialsNonExpired() {
+    // TODO Auto-generated method stub
+    return false;
+  }
+
+  @Override
+  public boolean isEnabled() {
+    // TODO Auto-generated method stub
+    return false;
+  }
 
 }
